@@ -1,8 +1,9 @@
 
 body {
     margin: 0;
+    overflow-x:hidden;
     font-family: 'Shadows Into Light', cursive;
-    background-image: url(https://media.istockphoto.com/id/609725440/photo/piano-keys-on-dark.jpg?s=612x612&w=0&k=20&c=j6hMeKH3umuhgkLSRdKUcO7u3CCEvlB9jfhuB_LKGsA=);
+    background-image: url(https://cdn.store-assets.com/s/397112/f/5757244.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -11,15 +12,26 @@ body {
     
     
 }
-
-header {
-    
-    display: block;
-    background-color: #333333;
-    opacity: .85;
-    border-radius: 8px;
-    
+body::after{
+    background: #494747;
+        content: "";
+        height: 300%;
+        left: 0;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: all .25s ease;
+        width: 300%;
 }
+header {
+
+    display: block;
+}
+.logo-img
+    {
+        height: 70px;
+    }
 .hader {
     
 position: relative;
@@ -118,16 +130,13 @@ main h1 {
 }
 
 .royale {
-    background-color: #999595;
+    
+    background-color: #272626;
     border-radius: 9px;
     opacity: .85;
+    font-size: 17px;
 }
 
-.pianino{
-    background-color: #999595;
-    border-radius: 9px;
-    opacity: .85; 
-}
 
 .photo {
     display: flex;
